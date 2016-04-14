@@ -1,0 +1,16 @@
+Package: DROIIDS
+Type: Package
+Title: Dimension Reduction On Independent Infectious Disease Systems Model
+Version: 0.1
+Date: 2016-01-19
+Author: John VanBuren <jvanburen88@gmail.com>
+Maintainer: John VanBuren <jvanburen88@gmail.com>
+Description: This package allows a user to analyze correlated measurements
+    collected across time on independent people
+Depends:
+    MASS,
+    parallel,
+    coda
+License: MIT
+LazyData: TRUE
+RoxygenNote: 5.0.1
