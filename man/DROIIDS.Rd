@@ -118,10 +118,10 @@ The \code{analysis.name} is the character string that will be used in all outfil
    less than \code{autocorr.thin.level} is 13, then 15 would be used as the thinning value.
 
    After completion of the first set of \code{n.iter.chain} iterations after the burn-in, the iterations from each chain are imported and convergence is assessed using the Gelman and Rubin
-   convergence diagnostic for all location variances, latent variances, and covariate parameters if \code{converge.check == TRUE}.  If at least one parameter in this group
+   convergence diagnostic (potential scale reduction factor – PSRF) for all location variances, latent variances, and covariate parameters if \code{converge.check = TRUE}.  If at least one parameter in this group
    did not converge, the iteration process outputting a new set of \code{n.iter.chain} iterations is repeated using the last observed iteration values of the parameters as
    starting values. This iterative cycle continues until there is convergence between the chains or until it looped through a maximum of \code{num.iter.loops}
-   times, whichever happened first. Convergence tests are not performed if the DROIIDS function is imputing data.
+   times, whichever happens first. Convergence tests are not performed if the DROIIDS function is imputing data.
 
    \code{impute} is an indicator (\code{TRUE}/\code{FALSE}) of whether imputation should be performed on missing data.  If there are
    missing data and impute = \code{FALSE}, only individuals with a complete set of data will remain in the analysis.  If \code{impute = TRUE}, the

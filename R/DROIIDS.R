@@ -109,6 +109,9 @@
 #'
 #' @return A list containing information of the DROIIDS analysis is produced from this function.  Information in this list is used to create summary statistics,
 #'    calculate predicted estimates and rates of changes, and plot the data.
+#' @import coda
+#' @import parallel
+#' @import MASS
 #' @export
 
 DROIIDS <- function(analysis.name=NULL, z=NA, x=NULL, Phi=NULL, n.Phi.vectors=NA, Phi.method="FA", n.cores=3, n.chains=3, seed=NA,

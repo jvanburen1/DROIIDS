@@ -29,8 +29,7 @@ A linear regression line is fit to the predicted data using time as the explanat
 
    The \code{analysis.name} is the character string that was specified in the \code{DROIIDS} function.  This analysis name will
    link the \code{rates.of.change} function to the iterations and output that were saved both in the global environments
-   and in .txt files in your current working directory.  If the iteration and predicted data are not currently in the global
-   environment, this function will automatically read in all the necessary information before calculating the rates of change.
+   and in .txt files in your current working directory.
 
    \code{save = TRUE} will produce a CSV file in the current working directory with rates of change for individuals
    at all locations. This provides rate estimates regardless of whether there are missing values in the raw data. The output file will

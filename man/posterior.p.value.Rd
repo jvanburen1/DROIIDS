@@ -13,7 +13,7 @@ posterior.p.value(analysis.name = NA, seed = NA)
 }
 \description{
 This function produces a posterior predictive p-value assessing goodness of fit
-using the posterior estimates from data analyzed from the \code{DROIIDS} function.
+using the posterior estimates from data analyzed with the \code{DROIIDS} function.
 }
 \details{
 The posterior iterations (\code{paste("DROIIDS.", <analysis.name>, ".Iterations", sep="")}) in the global environment is
