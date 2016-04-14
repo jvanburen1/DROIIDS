@@ -120,11 +120,6 @@ DROIIDS <- function(analysis.name=NULL, z=NA, x=NULL, Phi=NULL, n.Phi.vectors=NA
 
   start.time <- proc.time() # Record the start time of the analysis
 
-  library(MASS)
-  library(parallel)
-  library(coda)
-  library(compiler)
-
   dir.create(".//DROIIDS_Iterations", showWarnings = FALSE)
 
   ##### Read in Data and Set Up Output #####

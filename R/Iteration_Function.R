@@ -7,12 +7,6 @@ Iteration.Function <- function(Parameters) {
   burnin.autocorr <- Parameters[3]
   burnin.iters <- Parameters[4]
 
-  library(MASS)
-  library(parallel)
-  library(coda)
-  library(compiler)
-
-
   ### Specify Hyperparameters ###
     # Hyperparameters for normal a at time 0 #
     mu.prior.a0 <- rep(0,n.Phi.vectors)
